@@ -2,17 +2,16 @@ let RowsOfBoard=require("../board").RowsOfBoard;
 const rook=(r,c)=>{
    
  let LegalMoves=[];
-  //  let r='E';
-   // let c=5;
+  
 
-for(i=1;i<=8;i++)              
+for(i=1;i<=8;i++)            //for horizontal movements of rook  
 {
-    if(i==c)
+    if(i==c)          
     continue;
   LegalMoves.push(r+i);
 }
 
-for( str of RowsOfBoard)
+for( str of RowsOfBoard)   // for vertical movements of rook
 {
     if(str==r)
     continue;
@@ -20,8 +19,7 @@ for( str of RowsOfBoard)
 }
   
     
-   // for( str of LegalMoves)
-   // console.log(LegalMoves);
+  
    
     return LegalMoves;
 }

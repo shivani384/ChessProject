@@ -4,7 +4,7 @@
   "description": "",
   "main": "chess.js",
   "scripts": {
-    "test": "jest"
+    "test": "npmjest"
   },
   "author": "",
   "license": "ISC",
