@@ -10,7 +10,7 @@ test("expected movements of knight in 8*8 chess board",()=>{
     //Knight at middle position case;
     expect(knight('E',5)).toEqual(expect.arrayContaining(["G6", "G4", "C6", "C4", "F7", "F3", "D7", "D3"]));
     // Knight at Border of chess Board;
-    expect(knight('A',3)).toEqual(expect.arrayContaining( ["C4", "C2", "B5", "B1"]));    
+     expect(knight('A',3)).toEqual(expect.arrayContaining( ["C4", "C2", "B5", "B1"]));    
 
 })                                                                      
                                                                         

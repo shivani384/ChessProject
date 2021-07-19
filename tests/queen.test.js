@@ -11,7 +11,7 @@ test("expected queen movements in 8*8 chess board",()=>{
     expect(queen('D',4)).toHaveLength(27);
 
     //at border case expected movements are also 21
-    expect(queen('A',4)).toHaveLength(21);
+     expect(queen('A',4)).toHaveLength(21);
 
 
 })

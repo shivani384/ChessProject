@@ -11,5 +11,5 @@ expect(bishop('A',8)).toHaveLength(7); // left daigonal case resultant must be 7
 expect(bishop('E',5)).toHaveLength(13); // left daigonal case resultant must be 7 movements
 
 // at border case contains possible 7 movements;
-expect(bishop('A',6)).toHaveLength(7); // left daigonal case resultant must be 7 movements
+ expect(bishop('A',6)).toHaveLength(7); // left daigonal case resultant must be 7 movements
 })

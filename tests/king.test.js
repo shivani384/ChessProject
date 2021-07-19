@@ -10,7 +10,7 @@ expect(king('A',1)).toHaveLength(3);
 
 expect(king('A',5)).toHaveLength(5);   // at border gettingthe array of length 5 or not
 
-expect(king('D',5)).toHaveLength(8);   // at middle getting the array of length 8 or not
+expect(king('D',5)).toHaveLength(8);   // at middle getting the array of length 8 or not  
    
     
 })
