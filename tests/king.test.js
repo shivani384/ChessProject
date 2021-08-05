@@ -11,5 +11,6 @@ expect(king('D',5)).toEqual(expect.arrayContaining([
             "E4","E5","E6","D4","D6","C4","C5","C6"
 ]));   // at middle getting the array of length 8 or not  
    
-    
+
+
 })

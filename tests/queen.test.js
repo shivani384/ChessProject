@@ -17,4 +17,5 @@ test("expected queen movements in 8*8 chess board",()=>{
     ,"E3","F2","G1","C5","B6","A7","C3","B2","A1","E5","F6","G7","H8"]));
      
 
+    
 })

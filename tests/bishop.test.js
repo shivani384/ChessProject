@@ -11,4 +11,5 @@ expect(bishop('E',5)).toEqual(expect.arrayContaining([
 ]));  
 
  
+
 })
