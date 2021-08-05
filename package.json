@@ -3,11 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "chess.js",
-  "type": "module",
   "scripts": {
-    "test": "npmjest",
-    "start":"node --experimental-modules chess.mjs",
-    "node --experimental-modules chess.mjs":"npm start"
+    "test": "npmjest"
   },
   "author": "",
   "license": "ISC",

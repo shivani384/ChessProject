@@ -1,9 +1,9 @@
-import rook from "./Pieces/rook.mjs";
-import bishop from "./Pieces/bishop.mjs";
-import pawn from"./Pieces/pawn.mjs";
-import queen from "./Pieces/queen.mjs"
-import knight from "./Pieces/knight.mjs";
-import king from "./Pieces/king.mjs";
+const { rook } = require("./Pieces/rook");
+const {bishop}=require("./Pieces/bishop");
+const {pawn}=require("./Pieces/pawn");
+const {queen}=require("./Pieces/queen");
+const {knight}=require("./Pieces/knight");
+const {king}=require("./Pieces/king");
 
 class Chess{
      
