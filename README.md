@@ -13,14 +13,18 @@ version-2
  a new file movement.mjs has been introduced which contains the differnt movements of piece  with
  given stepsize on the basic of which different Pieces file changes;
  
- 
- es6 module approach import is used  in place of require;
+package.json changed also.
+
+In es6 module approach import is used  in place of require;
+and change the extension of file from .js to .mjs
 
 
 for running the code use command:
 npm start
 
+a sample input of "E5 Queen" will run and give the output accordingly.
+
 
 for running test use command:
-npm test   (some es6 issue  arises)
+npm test   (some es6 issue  arises file might not run)
 
