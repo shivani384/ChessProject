@@ -1,6 +1,6 @@
-const { expect } = require("@jest/globals");
+import { expect } from "@jest/globals";
  
-const {king}=require("../Pieces/king");
+import king from "../Pieces/king.mjs";
 
 test('king expected movement',()=>{
 expect(king('H',8)).toEqual(expect.arrayContaining(

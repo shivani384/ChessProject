@@ -1,5 +1,5 @@
 const { expect } = require("@jest/globals")
-const {knight} = require("../Pieces/knight")
+import knight from "../Pieces/knight.mjs"
 
 test("expected movements of knight in 8*8 chess board",()=>{
 

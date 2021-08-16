@@ -1,5 +1,5 @@
-const { expect } = require("@jest/globals");
-const {pawn} =require("../Pieces/pawn");
+import { expect } from "@jest/globals";
+import pawn from "../Pieces/pawn.mjs";
 
 test("expected pawn movements in 8*8 chess board",()=>{
     expect(pawn('H',1)).toEqual(expect.arrayContaining([]));  //at last row of chess board pawn can't move further

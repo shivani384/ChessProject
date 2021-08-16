@@ -1,5 +1,5 @@
-const { expect } = require("@jest/globals");
-const {queen}=require("../Pieces/queen");
+import  { expect } from "@jest/globals";
+import queen from "../Pieces/queen.mjs";
 
 test("expected queen movements in 8*8 chess board",()=>{
 
