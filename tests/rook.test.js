@@ -1,5 +1,5 @@
-const { expect } = require("@jest/globals");
-const {rook} =require("../Pieces/rook");
+import { expect } from "@jest/globals";
+import  rook  from "../Pieces/rook.mjs";
 
 test("expected rook movements in 8*8 chess board",()=>{
     //FROM CORNER CASES EXPECTED MOVEMENT
