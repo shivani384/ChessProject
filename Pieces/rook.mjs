@@ -1,14 +1,22 @@
 
 
-import { HorizontallyLeft, VerticalBackward, VerticalForward, HorizontalRight } from "../Moves/movement.mjs";
-import { BoardLength } from "../board.mjs";
+ 
+import Board from "../board.mjs";
 const rook = (row, column) => {
-    let Stepsize = BoardLength;
-    let LegalMoves = [...HorizontallyLeft(row, column, Stepsize),
-    ...HorizontalRight(row, column, Stepsize),
-    ...VerticalBackward(row, column, Stepsize),
-    ...VerticalForward(row, column, Stepsize)
-    ];
+   let LegalMoves=[];
+   const board= new Board();
+  // console.log(Board.getFirstColumn()); 
+     for(let HorizontalMove=board.getFirstColumn();HorizontalMove<=board.getLastColumn();HorizontalMove++){
+         if(HorizontalMove==column)
+         continue;
+         LegalMoves.push(row+HorizontalMove);
+    }
+    for(let VerticalMove=board.getFirstRowIndex();VerticalMove<=board.getLastRowIndex();VerticalMove++){
+        if(VerticalMove==board.getIndexOfRow(row))
+        continue;
+        LegalMoves.push(board.getRow(VerticalMove)+column);
+   }
+     
 
 
 

@@ -4,11 +4,13 @@ import pawn from"./Pieces/pawn.mjs";
 import queen from "./Pieces/queen.mjs"
 import knight from "./Pieces/knight.mjs";
 import king from "./Pieces/king.mjs";
+import Board from "./board.mjs";
 
 class Chess{
      
     
         constructor(RowColumn,Piece){
+             this.board=new Board();
              this.row=RowColumn.charAt(0);   //gets the row from the given RowColumn string
              this.col=parseInt(RowColumn.charAt(1)); //gets the column from the given RowColumn string
              this.piece=Piece;
@@ -17,10 +19,10 @@ class Chess{
         
     
     getInfo(){                    
-         return{row:this.row,col:this.col, piece:this.piece}
+         return{row:this.row,col:this.col, piece:this.piece,board:this.board}
     }
     getMoves(){
-         if(this.row>='A'&&this.row<='H'&&this.col>=1&&this.col<=8)  //it checks the valid rows from A-D
+         if(this.board.IsValidRowColumn(this.row,this.col))  //it checks the valid rows from A-D
                                                                      // and columns from 1-8 otherwise sends 
                                                                      // the error message 
          this.ChessPieceMovement();                               
@@ -74,7 +76,7 @@ ChessPieceMovement(){
 
 }
 };
-const Checker=new Chess("E5","Queen");  //created a object Checker of type Chess with arguments
+const Checker=new Chess("E5","Pawn");  //created a object Checker of type Chess with arguments
 Checker.getMoves();                     //calls the getMoves() function with Checker object
 
 

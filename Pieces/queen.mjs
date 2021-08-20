@@ -1,24 +1,15 @@
 
 
-import { BoardLength } from "../board.mjs";
-import {
-    HorizontallyLeft, HorizontalRight, VerticalBackward, VerticalForward, DiagonalLowerLeft, DiagonalLowerRight
-    , DiagonalUpperLeft, DiagonalUpperRight
-} from "../Moves/movement.mjs";
+import rook from "./rook.mjs";
+import bishop from "./bishop.mjs"
+ 
 
 const queen = (row, column) => {
-    let LegalMoves = [], Stepsize = BoardLength;
+    let LegalMoves = [];  
 
-    LegalMoves = [
-                   ...HorizontallyLeft(row, column, Stepsize),
-                   ...HorizontalRight(row, column, Stepsize),
-                   ...VerticalBackward(row, column, Stepsize),
-                    ...VerticalForward(row, column, Stepsize),
-                     ...DiagonalUpperLeft(row, column, Stepsize), 
-                     ...DiagonalLowerRight(row, column, Stepsize),
-                    ...DiagonalUpperRight(row, column, Stepsize), 
-                     ...DiagonalLowerLeft(row, column, Stepsize)
-                    ]
+    LegalMoves = [...rook(row,column),...bishop(row,column)];
+                    
+                    
 
 
     return LegalMoves;

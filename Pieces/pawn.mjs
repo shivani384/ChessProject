@@ -1,10 +1,10 @@
-
-import { VerticalForward } from "../Moves/movement.mjs";
+import Board from "../board.mjs"
 const pawn = (row, column) => {
-    let LegalMoves = [], Stepsize = 1;
-
-    LegalMoves = [...VerticalForward(row, column, Stepsize)];
-
+    const board=new Board();
+    let LegalMoves = [];
+    if(!(board.getLastRow()==row))
+    LegalMoves.push(board.getRow(board.getIndexOfRow(row)+1)+column);
+ 
     return LegalMoves;
 }
 
